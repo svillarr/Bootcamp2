@@ -5,5 +5,21 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Full-Stack Bootcamp!',
+    author: 'Dra. Sonia Villarreal'
+  },
+
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+          name: 'src',
+          path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
+  ]
   /* Your site config here */
 }
